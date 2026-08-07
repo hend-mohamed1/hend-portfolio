@@ -1,0 +1,52 @@
+.footer {
+  background: #111827;
+  text-align: center;
+  padding: 25px 8%;
+
+  color: #94a3b8;
+  font-size: 15px;
+
+  border-top: 1px solid rgba(255,255,255,0.08);
+
+  transition: .3s ease;
+}
+
+
+.footer p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+
+/* Hover */
+.footer:hover p {
+  color: #3b82f6;
+}
+
+
+/* Tablet */
+@media (max-width: 992px) {
+
+  .footer {
+    padding: 25px 5%;
+  }
+
+  .footer p {
+    font-size: 14px;
+  }
+
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  .footer {
+    padding: 20px;
+  }
+
+  .footer p {
+    font-size: 13px;
+  }
+
+}
