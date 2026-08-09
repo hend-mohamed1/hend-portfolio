@@ -20,23 +20,28 @@
   background: #1E293B;
   border-radius: 20px;
   overflow: hidden;
-  transition: .35s;
+  transition: 0.35s;
   border: 1px solid transparent;
+
   display: flex;
   flex-direction: column;
 }
 
 .project-card:hover {
   transform: translateY(-8px);
+
   border-color: #3B82F6;
-  box-shadow: 0 0 25px rgba(59,130,246,.3);
+
+  box-shadow: 0 0 25px rgba(59, 130, 246, 0.3);
 }
 
 .project-card img {
   width: 100%;
   height: 220px;
+
   object-fit: cover;
-  transition: .35s;
+
+  transition: 0.35s;
 }
 
 .project-card:hover img {
@@ -45,61 +50,86 @@
 
 .project-content {
   padding: 25px;
+
   display: flex;
   flex-direction: column;
+
   flex: 1;
 }
 
 .project-content h3 {
   color: white;
+
   font-size: 24px;
+
   margin-bottom: 15px;
 }
 
 .project-content p {
   color: #CBD5E1;
+
   line-height: 1.7;
+
   margin-bottom: 20px;
+
   flex: 1;
 }
 
 .tech {
   display: flex;
+
   flex-wrap: wrap;
+
   gap: 10px;
+
   margin-bottom: 20px;
 }
 
 .tech span {
   background: #3B82F6;
+
   color: white;
+
   padding: 7px 14px;
+
   border-radius: 20px;
+
   font-size: 13px;
 }
 
 .github-btn {
   width: fit-content;
+
   display: inline-flex;
+
   align-items: center;
+
   gap: 8px;
+
   text-decoration: none;
+
   background: #3B82F6;
+
   color: white;
+
   padding: 12px 20px;
+
   border-radius: 10px;
-  transition: .3s;
+
+  transition: 0.3s;
+
   font-weight: 600;
 }
 
 .github-btn:hover {
   background: #2563EB;
+
   transform: translateY(-2px);
 }
 
-/* ========== Tablet ========== */
+/* ================= TABLET ================= */
 
-@media (max-width:1024px) {
+@media (max-width: 1024px) {
 
   .mywork {
     padding: 80px 6%;
@@ -110,14 +140,14 @@
   }
 
   .projects-container {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
   }
 
 }
 
-/* ========== Mobile ========== */
+/* ================= MOBILE ================= */
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
 
   .mywork {
     padding: 70px 7%;
@@ -125,6 +155,7 @@
 
   .mywork h2 {
     font-size: 34px;
+
     margin-bottom: 40px;
   }
 
@@ -150,7 +181,27 @@
 
   .github-btn {
     width: 100%;
+
     justify-content: center;
+  }
+
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 400px) {
+
+  .mywork {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .project-card img {
+    height: 170px;
+  }
+
+  .project-content h3 {
+    font-size: 19px;
   }
 
 }

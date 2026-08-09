@@ -1,19 +1,28 @@
-body{
-  margin:0;
-  padding:0;
-  background:#0F172A;
-  overflow-x:hidden;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+html {
+  scroll-behavior: smooth;
 }
 
-#root{
-  width:100%;
+body {
+  margin: 0;
+  padding: 0;
+  background: #0F172A;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
 }
-.app{
-    width:100%;
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
 }

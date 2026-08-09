@@ -10,7 +10,6 @@ import MyWork from "./components/MyWork/MyWork";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 
-
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -35,7 +34,6 @@ function App() {
       <MyWork />
       <Contact />
       <Footer />
-      
     </div>
   );
 }

@@ -1,9 +1,10 @@
 .footer {
   background: #111827;
   text-align: center;
+
   padding: 25px 8%;
 
-  color: #94A3B8;
+  color: #94a3b8;
   font-size: 18px;
 
   border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -20,7 +21,9 @@
 
 .computer {
   display: inline-block;
+
   margin-right: 8px;
+
   font-size: 20px;
 
   animation: computerPulse 1.5s ease-in-out infinite;
@@ -45,7 +48,7 @@
 /* Footer Hover */
 
 .footer:hover p {
-  color: #3B82F6;
+  color: #3b82f6;
 }
 
 /* Tablet */

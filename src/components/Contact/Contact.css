@@ -5,6 +5,7 @@
 }
 
 /* Title */
+
 .contact h2 {
   color: #3b82f6;
   font-size: 45px;
@@ -13,6 +14,7 @@
 }
 
 /* Text */
+
 .contact-text {
   color: #cbd5e1;
   font-size: 18px;
@@ -21,8 +23,8 @@
   line-height: 1.8;
 }
 
-
 /* Cards */
+
 .contact-cards {
   display: grid;
   grid-template-columns: repeat(3, 230px);
@@ -30,13 +32,14 @@
   gap: 30px;
 }
 
-
 /* Card */
+
 .contact-card {
   width: 230px;
   min-height: 190px;
 
   background: #1e293b;
+
   border-radius: 20px;
 
   display: flex;
@@ -49,43 +52,46 @@
   text-decoration: none;
   color: white;
 
-  transition: .4s ease;
+  transition: 0.4s ease;
 
-  border: 1px solid rgba(255,255,255,.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
-
 
 .contact-card svg {
   font-size: 45px;
+
   color: #3b82f6;
+
   margin-bottom: 15px;
 }
 
-
 .contact-card h3 {
   font-size: 22px;
+
   margin: 8px 0;
 }
 
-
 .contact-card p {
   font-size: 14px;
+
   color: #cbd5e1;
+
   text-align: center;
+
   word-break: break-word;
 }
 
-
 /* Hover */
+
 .contact-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 35px rgba(59,130,246,.35);
+
+  border-color: #3b82f6;
+
+  box-shadow: 0 15px 35px rgba(59, 130, 246, 0.35);
 }
 
-
-/* =====================
-   Tablet
-===================== */
+/* ================= TABLET ================= */
 
 @media (max-width: 992px) {
 
@@ -97,19 +103,14 @@
     font-size: 40px;
   }
 
-
   .contact-cards {
     grid-template-columns: repeat(2, 230px);
+
     gap: 25px;
   }
-
 }
 
-
-
-/* =====================
-   Mobile
-===================== */
+/* ================= MOBILE ================= */
 
 @media (max-width: 600px) {
 
@@ -117,44 +118,41 @@
     padding: 60px 20px;
   }
 
-
   .contact h2 {
     font-size: 32px;
   }
 
-
   .contact-text {
     font-size: 16px;
+
     margin-bottom: 40px;
   }
 
-
   .contact-cards {
     grid-template-columns: 1fr;
+
     gap: 20px;
   }
 
-
   .contact-card {
     width: 100%;
+
     max-width: 320px;
+
     min-height: 180px;
+
     margin: auto;
   }
-
 
   .contact-card svg {
     font-size: 40px;
   }
 
-
   .contact-card h3 {
     font-size: 20px;
   }
 
-
   .contact-card p {
     font-size: 13px;
   }
-
 }

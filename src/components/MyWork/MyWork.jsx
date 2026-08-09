@@ -15,7 +15,8 @@ export default function MyWork() {
       description:
         "A React application for medication reminders, AI chat, OCR prescription upload, and adherence tracking.",
       image: smartMedication,
-      github: "https://github.com/hend-mohamed1/smart-medication-frontend",
+      github:
+        "https://github.com/hend-mohamed1/smart-medication-frontend",
       tech: ["React", "JavaScript", "CSS"],
     },
 
@@ -58,15 +59,18 @@ export default function MyWork() {
 
   return (
     <section className="mywork" id="projects">
+
       <motion.h2
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
       >
         My Work
       </motion.h2>
 
       <div className="projects-container">
+
         {projects.map((project, index) => (
           <motion.div
             className="project-card"
@@ -76,9 +80,14 @@ export default function MyWork() {
             transition={{ delay: index * 0.15 }}
             viewport={{ once: true }}
           >
-            <img src={project.image} alt={project.title} />
+
+            <img
+              src={project.image}
+              alt={project.title}
+            />
 
             <div className="project-content">
+
               <h3>{project.title}</h3>
 
               <p>{project.description}</p>
@@ -95,12 +104,16 @@ export default function MyWork() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaGithub /> View Code
+                <FaGithub />
+                View Code
               </a>
+
             </div>
           </motion.div>
         ))}
+
       </div>
+
     </section>
   );
 }

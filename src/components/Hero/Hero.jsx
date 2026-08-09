@@ -55,6 +55,7 @@ export default function Hero() {
         </motion.p>
 
         <div className="buttons">
+
           <a href="/Hend-CV.pdf" download>
             <button className="btn">
               Download CV
@@ -66,13 +67,16 @@ export default function Hero() {
               My Projects
             </button>
           </a>
+
         </div>
 
         <div className="icons">
+
           <a
             href="https://github.com/hend-mohamed1"
             target="_blank"
             rel="noreferrer"
+            aria-label="GitHub"
           >
             <FaGithub />
           </a>
@@ -81,9 +85,11 @@ export default function Hero() {
             href="https://www.linkedin.com/in/hend-mohamed-baa50338a/"
             target="_blank"
             rel="noreferrer"
+            aria-label="LinkedIn"
           >
             <FaLinkedin />
           </a>
+
         </div>
 
       </div>
@@ -96,7 +102,10 @@ export default function Hero() {
           repeat: Infinity,
         }}
       >
-        <img src={heroImage} alt="Hend Mohamed" />
+        <img
+          src={heroImage}
+          alt="Hend Mohamed"
+        />
       </motion.div>
 
     </section>

@@ -8,7 +8,13 @@ import {
   FaBootstrap,
   FaGitAlt,
   FaGithub,
+  FaRoute,
+  FaServer,
+  FaMobileAlt,
+  FaFigma,
+  FaNpm,
 } from "react-icons/fa";
+import { SiFramer } from "react-icons/si";
 
 export default function Skills() {
   const skills = [
@@ -19,17 +25,17 @@ export default function Skills() {
     { icon: <FaBootstrap />, name: "Bootstrap" },
     { icon: <FaGitAlt />, name: "Git" },
     { icon: <FaGithub />, name: "GitHub" },
-
-    { icon: "⚛️", name: "React Router" },
-    { icon: "🌐", name: "REST API" },
-    { icon: "📱", name: "Responsive Design" },
-    { icon: "🎨", name: "Framer Motion" },
-    { icon: "📦", name: "npm" },
-    { icon: "🖌️", name: "Figma" },
+    { icon: <FaRoute />, name: "React Router" },
+    { icon: <FaServer />, name: "REST API" },
+    { icon: <FaMobileAlt />, name: "Responsive Design" },
+    { icon: <SiFramer />, name: "Framer Motion" },
+    { icon: <FaNpm />, name: "npm" },
+    { icon: <FaFigma />, name: "Figma" },
   ];
 
   return (
     <section className="skills" id="skills">
+
       <motion.h2
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -40,6 +46,7 @@ export default function Skills() {
       </motion.h2>
 
       <div className="skills-container">
+
         {skills.map((skill, index) => (
           <motion.div
             className="skill-card"
@@ -48,7 +55,7 @@ export default function Skills() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
               duration: 0.5,
-              delay: index * 0.1,
+              delay: index * 0.08,
             }}
             viewport={{ once: true }}
           >
@@ -59,7 +66,9 @@ export default function Skills() {
             <h3>{skill.name}</h3>
           </motion.div>
         ))}
+
       </div>
+
     </section>
   );
 }

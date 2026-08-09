@@ -15,6 +15,7 @@ export default function About() {
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
       >
         About Me
       </motion.h2>
@@ -24,6 +25,7 @@ export default function About() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
       >
         I'm a passionate Front-End Developer and a fresh graduate from the
         Faculty of Computers and Information, Zagazig University. I enjoy
@@ -40,9 +42,12 @@ export default function About() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
+          viewport={{ once: true }}
         >
           <FaGraduationCap />
+
           <h3>Education</h3>
+
           <p>Faculty of Computers & Information</p>
           <p>Zagazig University</p>
         </motion.div>
@@ -52,9 +57,12 @@ export default function About() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
+          viewport={{ once: true }}
         >
           <FaLaptopCode />
+
           <h3>Specialization</h3>
+
           <p>Front-End Development</p>
           <p>React.js</p>
         </motion.div>
@@ -64,9 +72,12 @@ export default function About() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
+          viewport={{ once: true }}
         >
           <FaCode />
+
           <h3>Projects</h3>
+
           <p>5+ Completed Projects</p>
           <p>Responsive Web Apps</p>
         </motion.div>
@@ -76,9 +87,12 @@ export default function About() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
+          viewport={{ once: true }}
         >
           <FaLightbulb />
+
           <h3>Goal</h3>
+
           <p>Looking for a Front-End</p>
           <p>Developer Opportunity</p>
         </motion.div>

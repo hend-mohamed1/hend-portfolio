@@ -37,7 +37,9 @@ export default function Contact() {
           viewport={{ once: true }}
         >
           <FaEnvelope />
+
           <h3>Email</h3>
+
           <p>hendmohamed8860@gmail.com</p>
         </motion.a>
 
@@ -52,7 +54,9 @@ export default function Contact() {
           viewport={{ once: true }}
         >
           <FaGithub />
+
           <h3>GitHub</h3>
+
           <p>github.com/hend-mohamed1</p>
         </motion.a>
 
@@ -67,7 +71,9 @@ export default function Contact() {
           viewport={{ once: true }}
         >
           <FaLinkedin />
+
           <h3>LinkedIn</h3>
+
           <p>Connect with me</p>
         </motion.a>
 
