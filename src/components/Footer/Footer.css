@@ -3,30 +3,54 @@
   text-align: center;
   padding: 25px 8%;
 
-  color: #94a3b8;
-  font-size: 15px;
+  color: #94A3B8;
+  font-size: 18px;
 
-  border-top: 1px solid rgba(255,255,255,0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
-
 
 .footer p {
   margin: 0;
   line-height: 1.6;
 }
 
+/* Computer Emoji */
 
-/* Hover */
-.footer:hover p {
-  color: #3b82f6;
+.computer {
+  display: inline-block;
+  margin-right: 8px;
+  font-size: 20px;
+
+  animation: computerPulse 1.5s ease-in-out infinite;
 }
 
+/* Pulse Animation */
+
+@keyframes computerPulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Footer Hover */
+
+.footer:hover p {
+  color: #3B82F6;
+}
 
 /* Tablet */
-@media (max-width: 992px) {
 
+@media (max-width: 992px) {
   .footer {
     padding: 25px 5%;
   }
@@ -34,13 +58,11 @@
   .footer p {
     font-size: 14px;
   }
-
 }
 
-
 /* Mobile */
-@media (max-width: 600px) {
 
+@media (max-width: 600px) {
   .footer {
     padding: 20px;
   }
@@ -49,4 +71,7 @@
     font-size: 13px;
   }
 
+  .computer {
+    font-size: 17px;
+  }
 }
